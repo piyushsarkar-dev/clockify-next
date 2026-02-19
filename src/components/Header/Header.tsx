@@ -51,7 +51,7 @@ const Header = () => {
 					<h1
 						className="text-xl font-bold tracking-tight"
 						aria-label="App Name">
-						NEXT App
+						Clockify
 					</h1>
 				</Link>
 
