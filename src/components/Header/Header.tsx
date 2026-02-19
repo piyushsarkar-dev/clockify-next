@@ -49,7 +49,7 @@ const Header = () => {
 						className="h-7 w-auto object-contain"
 					/>
 					<h1
-						className="text-xl font-bold tracking-tight"
+						className="from-primary to-primary/70 bg-gradient-to-r bg-clip-text text-lg font-bold tracking-tight text-transparent md:text-xl"
 						aria-label="App Name">
 						Clockify
 					</h1>
