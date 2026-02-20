@@ -1,5 +1,5 @@
 const Clock = () => {
-	return <div>Enter</div>;
+	return <section></section>;
 };
 
 export default Clock;
