@@ -6,7 +6,8 @@ const Clock = () => {
 	const [hour, setHour] = useState(parseInt("00"));
 	const [minute, setMinute] = useState(parseInt("00"));
 	const [secoend, setSecoend] = useState(parseInt("00"));
-	const [ampm, setAmpm] = useState();
+	const [ampm, setAmpm] = useState("AM/PM");
+
 	return (
 		<section>
 			<div className="bg-card text-card-foreground mx-auto h-80 w-180 rounded-xl shadow-2xl">
