@@ -8,8 +8,10 @@ const Clock = () => {
 	const [secoend, setSecoend] = useState(parseInt("00"));
 	const [ampm, setAmpm] = useState("AM/PM");
 	useEffect(() => {
-		alert("Hello Piyush 😎");
-	}, []);
+        const setInterval(() => {
+            
+        }, interval);
+    });
 	return (
 		<section>
 			<div className="bg-card text-card-foreground mx-auto h-80 w-180 rounded-xl shadow-2xl">
