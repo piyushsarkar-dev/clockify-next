@@ -1,17 +1,16 @@
 "use client";
 
+import { format } from "date-fns";
 import { useEffect, useState } from "react";
 
 const Clock = () => {
-	const [hour, setHour] = useState(parseInt("00"));
-	const [minute, setMinute] = useState(parseInt("00"));
-	const [secoend, setSecoend] = useState(parseInt("00"));
-	const [ampm, setAmpm] = useState("AM/PM");
-	useEffect(() => {
-        const setInterval(() => {
-            
-        }, interval);
-    });
+	const [hour, setHours] = useState("00");
+	const [minutes, setMinutes] = useState("00");
+	const [second, setSecoend] = useState("00");
+	const [ampm, setAmpm] = useState(format(new Date(), "eeee,dd LLLL yyyy"));
+
+	useEffect(() => {}, []);
+
 	return (
 		<section>
 			<div className="bg-card text-card-foreground mx-auto h-80 w-180 rounded-xl shadow-2xl">
@@ -30,9 +29,9 @@ const Clock = () => {
 					<div className="flex items-center justify-center">
 						<div>{hour}</div>
 						<span>:</span>
-						<div>{minute}</div>
+						<div>{minutes}</div>
 						<span>:</span>
-						<div>{secoend}</div>
+						<div>{second}</div>
 
 						<div>{ampm}</div>
 					</div>
