@@ -5,17 +5,17 @@ import { useEffect, useState } from "react";
 import { SlidingNumber } from "../../components/motion-primitives/sliding-number";
 
 const Clock = () => {
-	const [hour, setHours] = useState("00");
-	const [minutes, setMinutes] = useState("00");
-	const [second, setSecoend] = useState("00");
-	const [ampm, setAmpm] = useState("00");
+	const [hour, setHours] = useState(parseInt("00"));
+	const [minutes, setMinutes] = useState(parseInt("00"));
+	const [second, setSecoend] = useState(parseInt("00"));
+	const [ampm, setAmpm] = useState("XXX");
 	const [date, setDate] = useState(format(new Date(), "eeee, dd LLLL yyyy"));
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setHours(format(new Date(), "hh"));
-			setMinutes(format(new Date(), "mm"));
-			setSecoend(format(new Date(), "ss"));
+			setHours(parseInt(format(new Date(), "hh")));
+			setMinutes(parseInt(format(new Date(), "mm")));
+			setSecoend(parseInt(format(new Date(), "ss")));
 			setAmpm(format(new Date(), "a"));
 
 			setDate(format(new Date(), "eeee, dd LLLL yyyy"));
@@ -50,7 +50,11 @@ const Clock = () => {
 							padStart={true}
 						/>
 						<span>:</span>
-						<SlidingNumber value={second} />
+						<SlidingNumber
+							value={second}
+							padStart={true}
+						/>
+						<div className="">{ampm}</div>
 					</div>
 					<div className="">{date}</div>
 				</div>
