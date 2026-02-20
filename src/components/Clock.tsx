@@ -2,7 +2,7 @@ const Clock = () => {
 	return (
 		<section>
 			<div className="bg-card text-card-foreground mx-auto h-80 w-180 rounded-xl shadow-2xl">
-				<div className="bg-muted flex items-center p-3">
+				<div className="flex items-center p-3">
 					<div className="px-1">
 						<span className="inline-block h-4 w-4 cursor-pointer rounded-full bg-red-500"></span>
 					</div>
