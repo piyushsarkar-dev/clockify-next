@@ -13,6 +13,17 @@ const Clock = () => {
 						<span className="inline-block h-4 w-4 cursor-pointer rounded-full bg-green-500"></span>
 					</div>
 				</div>
+				<div className="flex items-center justify-center">
+					<div className="">
+						<div className="">00</div>
+						<span>:</span>
+						<div className="">00</div>
+						<span>:</span>
+						<div className="">00</div>
+						<div className="">XX</div>
+					</div>
+					<div className=""></div>
+				</div>
 			</div>
 		</section>
 	);
