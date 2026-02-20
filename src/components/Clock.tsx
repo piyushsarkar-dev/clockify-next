@@ -7,7 +7,7 @@ const Clock = () => {
 	const [hour, setHours] = useState("00");
 	const [minutes, setMinutes] = useState("00");
 	const [second, setSecoend] = useState("00");
-	const [ampm, setAmpm] = useState(format(new Date(), "hh"));
+	const [ampm, setAmpm] = useState("00");
 	const [date, setDate] = useState(format(new Date(), "eeee, dd LLLL yyyy"));
 
 	useEffect(() => {
