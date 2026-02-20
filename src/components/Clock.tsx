@@ -13,8 +13,8 @@ const Clock = () => {
 						<span className="inline-block h-4 w-4 cursor-pointer rounded-full bg-green-500"></span>
 					</div>
 				</div>
-				<div className="flex items-center justify-center">
-					<div className="">
+				<div className="flex h-full flex-col items-center justify-center font-mono text-7xl">
+					<div className="flex items-center justify-center">
 						<div className="">00</div>
 						<span>:</span>
 						<div className="">00</div>
@@ -22,7 +22,7 @@ const Clock = () => {
 						<div className="">00</div>
 						<div className="">XX</div>
 					</div>
-					<div className=""></div>
+					<div className="">Date</div>
 				</div>
 			</div>
 		</section>
