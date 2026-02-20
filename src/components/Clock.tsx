@@ -1,4 +1,12 @@
+"use client";
+
+import { useState } from "react";
+
 const Clock = () => {
+	const [hour, setHour] = useState(parseInt("00"));
+	const [minute, setMinute] = useState(parseInt("00"));
+	const [secoend, setSecoend] = useState(parseInt("00"));
+	const [ampm, setAmpm] = useState();
 	return (
 		<section>
 			<div className="bg-card text-card-foreground mx-auto h-80 w-180 rounded-xl shadow-2xl">
@@ -15,12 +23,13 @@ const Clock = () => {
 				</div>
 				<div className="flex h-full flex-col items-center justify-center gap-3 font-mono text-7xl">
 					<div className="flex items-center justify-center">
-						<div className="">00</div>
+						<div>{hour}</div>
 						<span>:</span>
-						<div className="">00</div>
+						<div>{minute}</div>
 						<span>:</span>
-						<div className="">00</div>
-						<div className="">XX</div>
+						<div>{secoend}</div>
+
+						<div>{ampm}</div>
 					</div>
 					<div className="">Date</div>
 				</div>
