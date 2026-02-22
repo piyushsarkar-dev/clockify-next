@@ -20,7 +20,7 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
 		<html
 			lang="en"
 			suppressHydrationWarning>
-			<body className="min-h-screen bg-[url('/images/bg/light.jpg')]">
+			<body className="min-h-screen bg-[url('/images/bg/light.jpg')] bg-cover bg-center bg-no-repeat dark:bg-[url(/'images/bg-dark.jpg')]">
 				<ThemeProvider
 					attribute={"class"}
 					defaultTheme="dark"
