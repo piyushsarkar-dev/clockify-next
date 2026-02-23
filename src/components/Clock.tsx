@@ -22,7 +22,7 @@ const Clock = () => {
 					<SlidingNumber value={secoend} />
 					<div>{ampm}</div>
 				</div>
-				<div>{date}</div>
+				<div className="">{date}</div>
 			</div>
 		</section>
 	);
