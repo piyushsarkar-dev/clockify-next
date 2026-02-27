@@ -115,7 +115,37 @@
 		@apply border-border outline-ring/50;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply text-foreground;
+	}
+}
+
+.bg-scroll-track {
+	position: absolute;
+	inset: 0;
+	height: 200%;
+	will-change: transform;
+	backface-visibility: hidden;
+	animation: bg-scroll-up 36s linear infinite;
+}
+
+.bg-scroll-panel {
+	height: 50%;
+	background-image: url("/white-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.dark .bg-scroll-panel {
+	background-image: url("/dark-bg.jpg");
+}
+
+@keyframes bg-scroll-up {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -50%, 0);
 	}
 }
 
